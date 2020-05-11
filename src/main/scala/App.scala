@@ -25,16 +25,6 @@ object App {
     .getOrCreate()
 
   def main(args:Array[String]): Unit = {
-    Console.println("Hello World!")
-
-    val df = spark.read.csv("src\\test\\resources\\Data\\audit-data.txt")
-    df.printSchema()
-    df.show(5)
-    var dfArray = df.collect()
-    for(i <- 1 to 5){
-      println(dfArray(i))
-    }
-
-    //df.select
+    
   }
 }
